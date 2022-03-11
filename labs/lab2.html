@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html style="background: #9fdae9">
+  <head>
+    <title>Numbers</title>
+
+    <script src="numbers.js"></script>
+    <script src="animation.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+    button {
+      position: absolute;
+      margin-left: 35%;
+      background-color: bisque;
+      border: none;
+      border-radius: 50%;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      position: relative;
+    }
+  </style>
+
+  <body>
+    <button onclick="Scene.start()">Start!</button>
+    <a style="float: left; font-size: xx-large" href="../index.html">Home</a>
+    <div id="scene" style="text-align: center; padding-top: 10%">
+      <img
+        id="starting"
+        src="./numbers/tile000.png"
+        height="265"
+        width="185"
+        style="margin-left: 12%"
+      />
+      <canvas id="myCanvas" width="370" height="265"></canvas>
+    </div>
+  </body>
+</html>
