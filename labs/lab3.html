@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html style="background-color: blanchedalmond">
+  <head>
+    <title>Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <a style="float: left; font-size: x-large" href="../index.html">Home</a>
+    <form style="text-align: center; padding-top: 12%">
+      <label for="noteTitle">Title:</label>
+      <input type="text" id="noteTitle" maxlength="40" oninput="saveTitle()" />
+      <br />
+      <br />
+      <textarea id="notes" row="10" cols="80" oninput="saveText()"></textarea>
+      <br />
+      <br />
+
+      <button id="clear" onclick="clearText()">Clear</button>
+    </form>
+    <script src="lab3.js"></script>
+  </body>
+</html>
