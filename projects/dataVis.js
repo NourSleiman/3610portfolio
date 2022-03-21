@@ -9,7 +9,6 @@ let myChart = new Chart(ctx1, {
     labels: ["Manhattan", "Brooklyn", "Queens", "Bronx", "Staten Island"],
     datasets: [
       {
-        label: "Nour Sleiman - Film Permits by Borough",
         data: [35728, 23270, 12062, 2397, 966],
         backgroundColor: [
           "rgba(255, 99, 132, 0.2)",
@@ -30,6 +29,15 @@ let myChart = new Chart(ctx1, {
     ],
   },
   options: {
+    plugins: {
+      legend: {
+        display: false,
+      },
+      title: {
+        display: true,
+        text: "Nour Sleiman - Film Permits By Borough",
+      },
+    },
     scales: {
       y: {
         ticks: {
