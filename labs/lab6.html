@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phaser Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser-arcade-physics.min.js"></script>
+  </head>
+  <body>
+    <a style="float: left; font-size: large" href="../index.html">Home</a>
+    <br />
+    <br />
+    <script>
+      var config = {
+        type: Phaser.AUTO,
+        width: 700,
+        height: 500,
+        _parent: "phaser-example",
+        backgroundColor: "#efefef",
+        scene: {
+          preload: preload,
+          create: create,
+        },
+      };
+
+      var game = new Phaser.Game(config);
+
+      function preload() {
+        this.load.image("background", "./waffles.png");
+        this.load.image("butter", "./butter.png");
+        this.load.image("syrup", "./mapleSyrup.png");
+        this.load.image("strawberries", "./strawberries.png");
+        this.load.image("chocolate", "./chocolate.png");
+      }
+
+      function create() {
+        var background = this.add.sprite(270, 250, "background");
+        var butter = this.add.sprite(135, 125, "butter");
+        var syrup = this.add.sprite(50, 50, "syrup");
+        var strawberries = this.add.sprite(200, 200, "strawberries");
+        var chocolate = this.add.sprite(175, 175, "chocolate");
+
+        butter.setInteractive();
+        syrup.setInteractive();
+        strawberries.setInteractive();
+        chocolate.setInteractive();
+
+        this.input.setDraggable(butter);
+        this.input.setDraggable(syrup);
+        this.input.setDraggable(strawberries);
+        this.input.setDraggable(chocolate);
+
+        this.input.on("drag", function (pointer, gameObject, dragX, dragY) {
+          gameObject.x = dragX;
+          gameObject.y = dragY;
+        });
+      }
+    </script>
+  </body>
+</html>
