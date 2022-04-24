@@ -26,18 +26,18 @@
 
       function preload() {
         this.load.image("background", "./waffles.png");
-        this.load.image("butter", "./butter.png");
         this.load.image("syrup", "./mapleSyrup.png");
         this.load.image("strawberries", "./strawberries.png");
         this.load.image("chocolate", "./chocolate.png");
+        this.load.image("butter", "./butter.png");
       }
 
       function create() {
         var background = this.add.sprite(270, 250, "background");
-        var butter = this.add.sprite(135, 125, "butter");
         var syrup = this.add.sprite(50, 50, "syrup");
         var strawberries = this.add.sprite(200, 200, "strawberries");
         var chocolate = this.add.sprite(175, 175, "chocolate");
+        var butter = this.add.sprite(135, 125, "butter");
 
         butter.setInteractive();
         syrup.setInteractive();
