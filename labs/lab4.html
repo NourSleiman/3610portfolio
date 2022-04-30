@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resume</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+  />
+
+  <style>
+    p {
+      margin-left: 1%;
+      margin-right: 2%;
+    }
+    h4,
+    h6,
+    h8 {
+      margin-left: 1%;
+      margin-right: 2%;
+    }
+
+    td {
+      padding: 1%;
+    }
+
+    .thumbnail {
+      width: 30%;
+    }
+  </style>
+
+  <body>
+    <nav id="scrollNavbar" class="navbar navbar-light bg-light px-3">
+      <a class="navbar-brand" href="#">Nour Sleiman</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading3">Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading4">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading5">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading5">Contact Info</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#scrollNavbar"
+      data-bs-offset="0"
+      class="scrollspy-nav"
+      tabindex="0"
+    >
+      <br />
+      <h4 id="scrollspyHeading1">About Me</h4>
+      <p>
+        Hello! My name is Nour Sleiman and I'm a senior at CUNY-Brooklyn College
+        graduating in May 2022. My major is Computer Science with a double minor
+        in Multimedia Computing and History. I like to dabble in all things
+        computer science and am a big fan of video games.
+      </p>
+      <br />
+
+      <h4 id="scrollspyHeading2">Education</h4>
+      <p>
+        CUNY-Brooklyn College<br />Bachelor of Science in Computer Science<br />GPA:3.99/4.0
+      </p>
+      <br />
+
+      <h4 id="scrollspyHeading3">Experience</h4>
+      <h6>CUNY Tech Prep</h6>
+      <h8>Data Science Fellow</h8>
+      <p>
+        Learn in-demand technologies like Python 3, Jupyter Notebooks, Pandas,
+        Numpy, Scikit-learn, and SQL as well as industry best practices for
+        exploratory data analysis (EDA), feature engineering, data collection
+        and processing, statistical modeling, data visualization, machine
+        learning techniques, data science process, and big data
+      </p>
+      <br />
+      <br />
+
+      <h4 id="scrollspyHeading4">Projects</h4>
+      <table style="border: none">
+        <tr>
+          <td class="thumbnail">
+            <img src="./gameThumbnail.png" alt="Game" />
+          </td>
+          <td>
+            <h6>
+              <a
+                href="https://attentative-student.itch.io/group-10-unicode-decoding"
+                >Unicode Encoding</a
+              >
+            </h6>
+            <ul>
+              <li>
+                Designed a game, in a team of 3, in Unity using C# that teaches
+                binary conversion and UTF encoding.
+              </li>
+              <li>
+                Built minigames within that prompted the player to convert
+                binary numbers to decimal as well as the background design and
+                dialogue.
+              </li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td class="thumbnail">
+            <img
+              src="./detectionThumbnail.png"
+              alt="Cancer Detection"
+              style="width: 90%; height: 50%"
+            />
+          </td>
+          <td>
+            <h6>
+              <a href="https://github.com/Hi-Tree/DataScienceCancerDetection"
+                >Breast Cancer Detection</a
+              >
+            </h6>
+            <ul>
+              <li>
+                Built a machine learning algorithm, in a team of 3, to detect
+                the possibility of cancer based on images of breast cells.
+              </li>
+              <li>
+                Python and HTML were used to create the model and display it.
+                Tensorflow for image processing, Sklearn for statistical
+                analysis, pickle to export and reuse the model, and Flask for
+                the interface.
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+      <br />
+
+      <h4 id="scrollspyHeading5">Skills</h4>
+      <h6>Programming</h6>
+      <p>Java, Python, HTML, CSS, JavaScript, C#, C++</p>
+      <h6>Technologies</h6>
+      <p>Windows, Git/Github, Unity</p>
+      <br />
+
+      <h4 id="scrollspyHeading6">Contact Info</h4>
+      <p>Email: noursleiman07@gmail.com</p>
+    </div>
+  </body>
+</html>
