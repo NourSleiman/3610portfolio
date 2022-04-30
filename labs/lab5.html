@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(155, 116, 160)">
+  <head>
+    <title>Audio Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <audio id="alarm">
+      <source src="../sounds/alarm.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="clock">
+      <source src="../sounds/clockStrike.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="bass">
+      <source src="../sounds/mysteriousBass.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="machine">
+      <source src="../sounds/futuristicMachine.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio id="radio">
+      <source src="../sounds/alienRadio.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <a style="float: left; font-size: large" href="../index.html">Home</a>
+    <br />
+    <h3 style="text-align: center">Press the circles for some sound!</h3>
+    <img src="radioMap.png" usemap="#image-map" style="margin-left: 28%" />
+
+    <map name="image-map">
+      <area
+        alt="alarm"
+        title="alarm"
+        href="#"
+        coords="136,205,21"
+        shape="circle"
+        onclick="callAlarm()"
+      />
+      <area
+        alt="clock"
+        title="clock"
+        href="#"
+        coords="188,206,22"
+        shape="circle"
+        onclick="callClock()"
+      />
+      <area
+        alt="bass"
+        title="bass"
+        href="#"
+        coords="392,313,53"
+        shape="circle"
+        onclick="callBass()"
+      />
+      <area
+        alt="machine"
+        title="machine"
+        href="#"
+        coords="299,281,14"
+        shape="circle"
+        onclick="callMachine()"
+      />
+      <area
+        alt="radio"
+        title="radio"
+        href="#"
+        coords="299,357,15"
+        shape="circle"
+        onclick="callRadio()"
+      />
+    </map>
+
+    <script>
+      let alarm = document.getElementById("alarm");
+      let clock = document.getElementById("clock");
+      let bass = document.getElementById("bass");
+      let machine = document.getElementById("machine");
+      let radio = document.getElementById("radio");
+
+      function callAlarm() {
+        alarm.play();
+      }
+
+      function callClock() {
+        clock.play();
+      }
+
+      function callBass() {
+        bass.play();
+      }
+
+      function callMachine() {
+        machine.play();
+      }
+
+      function callRadio() {
+        radio.play();
+      }
+    </script>
+  </body>
+</html>
